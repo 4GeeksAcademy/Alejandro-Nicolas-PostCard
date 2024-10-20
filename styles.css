@@ -1,45 +1,54 @@
 body {
-	background: black;
+	font-family: Arial, sans-serif;
 }
-* {
-	border: 1px dashed red;
-	min-height: 10px;
-}
+
 .postcard {
-	background-color: white;
 	width: 400px;
-	height: 400px;
-	margin: auto;
-}
-.postcard-header {
+	height: 300px;
+	border: 2px solid black;
+	padding: 20px;
+	box-sizing: border-box;
 	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
-.postcard-header img {
-	width: 50px;
-	height: 50px;
+
+.text-section {
+	width: 60%;
 }
-.postcard-header h1 {
-	width: 115px;
-	margin: 115px;
+
+.text-section p {
+	margin: 10px 0;
 }
-.postcard-body {
-	display: flex;
+
+.form-section {
+	width: 35%;
 }
-.body-left p:first-child {
-	margin-top: x;
+
+.form-section input,
+.form-section textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
-.body-left,
-.body-right {
-	padding: x;
-}
-input {
+
+.form-section input[type="submit"] {
+	background-color: #ccc;
+	cursor: pointer;
 	border: none;
-	border-bottom: x;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-.postcard-footer {
-	text-align: center;
+
+.logo {
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
-button {
-	background-color: grey;
-	padding: x;
+
+.logo img {
+	width: 50px;
 }
